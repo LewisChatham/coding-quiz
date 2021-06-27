@@ -1,5 +1,8 @@
 # Coding-Quiz
 
+Link to Github repository: https://github.com/LewisChatham/coding-quiz
+Link to live site: https://lewischatham.github.io/coding-quiz/
+
 ## Description
 My motivation for building this coding-quiz were to work on my use of dynamic content and local storage.
 It serves to test peoples technical knowledge.
