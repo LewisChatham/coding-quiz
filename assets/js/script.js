@@ -204,5 +204,19 @@ function goHome() {
 }
 
 function addHighscore () {
-    
+    var score = document.getElementById("timeRemaining").innerHTML
+    var initials = document.getElementById("initials").value
+    if (initials == "") {
+        alert("Please enter your initials.")
+        return
+    }
+
+    var highscores = JSON.parse(localStorage.getItem("highscores"))
+    if (highscores === null) {
+        highscores = [{initials: initials, score: score}]
+    } else {
+        highscores.push({initials: initials, score: score})
+    }
+    localStorage.setItem("highscores", JSON.stringify(highscores))
+    window.location = "/highscores.html"
 }

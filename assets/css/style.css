@@ -94,6 +94,7 @@ main input {
     background: var(--primary);
     border: none;
     color: white;
+    font-family: 'Raleway', sans-serif;
 }
 
 #quizArea h3 {
@@ -125,6 +126,24 @@ main #initials {
 main #initials:focus {
     outline: none;
     text-align: center;
+}
+
+#highscoresEl {
+    list-style: none;
+    font-size: 1.6rem;
+    line-height: 3rem;
+    font-weight: 700;
+    margin-bottom: 4rem;
+}
+
+.link-button {
+    font-size: 2rem;
+    padding: .5rem 1.5rem;
+    border-radius: 50rem;
+    background: var(--primary);
+    border: none;
+    color: white;
+    text-decoration: none;
 }
 
 .hidden {
