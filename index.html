@@ -6,11 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
     
+    <nav>
+        <a href="./highscores.html">Highscores</a>
+        <p>Time: <span id="secondsLeft">0</span></p>
+    </nav>
 
+    <main>
+        <section id="introduction">
+            <h1>Coding Quiz Challenge</h1>
+            <p>To answer the following code-related questions within the time limit, keep in mind that incorrect answers will penalise your score time by ten seconds.</p>
+            <button id="startQuiz" class="startQuiz">Start Quiz</button>
+        </section>
+        <section id="quizArea" class="hidden"></section>
+        <section id="loseArea" class="hidden">
+            <h2>You lose!</h2>
+            <p>Try again and make sure not to run out of time.</p>
+            <p>Remember, incorrect answers reduce your time by 10 seconds.</p>
+            <input type="button" value="Try Again" class="startQuiz" id="tryAgain">
+        </section>
+        <section id="winArea" class="hidden">
+            <h2>Congratulations! You won with <span id="timeRemaining">75</span> seconds left.</h2>
+            <p>Enter your initials below to save your score.</p>
+            <input type="text" id="initials">
+            <br>
+            <input type="button" id="saveScore" value="Save Score">
+            <input type="button" id="home" value="Home">
+        </section>
+    </main>
 
 
     <script src="./assets/js/script.js"></script>
