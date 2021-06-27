@@ -1,0 +1,132 @@
+:root {
+    --text: #333;
+    --primary: rebeccapurple;
+    --secondary: rgb(133, 78, 189);
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    color: var(--text);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--text);
+    cursor: pointer;
+}
+
+main {
+    text-align: center;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40vw;
+}
+
+main h1 {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+    font-weight: 700;
+}
+
+main p {
+    font-size: 2rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+main button {
+    font-size: 2rem;
+    padding: .5rem 1.5rem;
+    border-radius: 50rem;
+    background: var(--primary);
+    border: none;
+    color: white;
+}
+
+.startQuiz {
+    transition: .2s all;
+    padding: 1rem 3rem;
+}
+
+.startQuiz:hover {
+    transform: translateY(-.3rem);
+    box-shadow: 0 1rem 2rem rgb(0 0 0 / 20%);
+}
+
+.startQuiz:active {
+    transform: translateY(-1px);
+    box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 20%)
+}
+
+main h2 {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+    font-weight: 700;
+}
+
+#quizArea ul {
+    margin-top: 6rem;
+    list-style: none;
+}
+
+#quizArea li {
+    margin-top: 2rem;
+}
+
+main input {
+    font-size: 2rem;
+    padding: .5rem 1.5rem;
+    border-radius: 50rem;
+    background: var(--primary);
+    border: none;
+    color: white;
+}
+
+#quizArea h3 {
+    margin-top: 4rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-decoration: underline;
+    text-decoration-color: var(--primary);
+}
+
+input {
+    cursor: pointer;
+}
+
+main #initials {
+    font-size: 2rem;
+    padding: .5rem 1.5rem;
+    border-radius: 50rem;
+    background: white;
+    -moz-box-shadow:    inset 0 0 .8rem var(--text);
+    -webkit-box-shadow: inset 0 0 .8rem var(--text);
+    box-shadow:         inset 0 0 .8rem var(--text);
+    text-align: center;
+    border: none;
+    color: var(--text);
+    margin-bottom: 3rem;
+}
+
+main #initials:focus {
+    outline: none;
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
