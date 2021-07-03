@@ -218,5 +218,5 @@ function addHighscore () {
         highscores.push({initials: initials, score: score})
     }
     localStorage.setItem("highscores", JSON.stringify(highscores))
-    window.location = "/highscores.html"
+    window.location = "./highscores.html"
 }
