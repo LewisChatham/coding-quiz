@@ -1,7 +1,7 @@
 var clearBtn = document.getElementById("clearScores")
 var highscoresEl = document.getElementById("highscoresEl")
 
-window.onload = function () {
+
     var highscores = JSON.parse(localStorage.getItem("highscores"))
     var highscoresEl = document.getElementById("highscoresEl")
 
@@ -16,7 +16,7 @@ window.onload = function () {
             highscoresEl.appendChild(element)
         }
     }
-}
+
 
 clearBtn.addEventListener("click", function () {
     var highscores = JSON.parse(localStorage.getItem("highscores"))
